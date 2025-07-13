@@ -1,25 +1,33 @@
-# Project steps
-## Phase 1 — Minimalist Tetris (without AI)
-- Create a basic version of Tetris:
-- Grid 10x20.
-- Standard parts (I, O, T, L, J, S, Z).
-- Left/right movement, rotation, quick fall.
-- Deletion of complete lines.
-- Objective: a functional and simulable game engine.
+# Project Steps
 
-## Phase 2—Q-Learning Agent Onboarding
-- Definition of a simplified state space.
-- Definition of possible actions.
-- Reward function.
-- Implementation of the Q-Learning algorithm (table Q).
+## Phase 1 — Minimalist Tetris (without AI) — **Completed**
+- Created a basic Tetris game engine with:
+  - Grid size: 10x15 (reduced height for faster simulation)
+  - Standard Tetromino pieces (I, O, T, L, J, S, Z)
+  - Left/right movement, rotation, and soft drop (quick fall)
+  - Line clearing when a row is fully filled
+  - Game over detection when pieces reach the top
+  - Interactive terminal controls using arrow keys and spacebar for faster drop
+- Objective achieved: a functional and playable Tetris game engine in the terminal
 
-## Phase 3 — Displaying the AI that is playing
-- Added a lightweight graphical user interface (pygame) or console with curses.
-- Visualization of the AI during its learning or during execution.
+## Phase 2 — Q-Learning Agent Onboarding
+- Define a simplified state space for the agent
+- Define possible actions the agent can take
+- Design a reward function to guide learning
+- Implement the Q-Learning algorithm using a Q-table
 
-## Libraries used
-- pygame: simple display (to visualize Tetris and the AI).
-- numpy: matrix processing (states, grid).
-- random: random management.
+## Phase 3 — Displaying the AI Playing Tetris
+- Add lightweight visualization (e.g., using pygame or a terminal UI with curses)
+- Visualize the AI’s gameplay during learning and execution
 
-(optionally later: matplotlib to view scores)
+## Libraries Used
+- `numpy`: for matrix and grid management
+- `random`: for piece generation
+- `keyboard`: for real-time user input in terminal
+- (Optionally later) `pygame`: for graphical visualization of the game and AI
+- (Optionally later) `matplotlib`: to plot scores and learning progress
+
+---
+
+**Note:**  
+We will continue using the terminal interface for now, as it is simple and effective. A graphical interface can be added later if needed.
