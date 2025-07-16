@@ -1,6 +1,6 @@
 # Project Steps
 
-## Phase 1 — Minimalist Tetris (without AI) — **Completed**
+## Phase 1 — Minimalist Tetris (without AI)
 - Created a basic Tetris game engine with:
   - Grid size: 10x15 (reduced height for faster simulation)
   - Standard Tetromino pieces (I, O, T, L, J, S, Z)

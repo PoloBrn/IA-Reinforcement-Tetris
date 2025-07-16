@@ -82,8 +82,7 @@ class Tetris:
             return
 
         current_time = time.time()
-        # Drop faster if spacebar pressed (soft drop)
-        speed = 0.05 if keyboard.is_pressed('space') else self.drop_speed
+        speed = 0.05 if keyboard.is_pressed('down') else self.drop_speed
         
         if current_time - self.last_drop_time >= speed:
             if self.can_move(0, 1):
@@ -123,7 +122,7 @@ class Tetris:
 # Game loop with user input handling
 game = Tetris()
 
-print("Controls: Left/Right arrows to move, Up arrow to rotate, Spacebar to drop faster, Ctrl+C to quit.")
+print("Controls: Left/Right arrows to move, Up arrow to rotate, down to drop faster, Ctrl+C to quit.")
 try:
     while not game.game_over:
         game.render()
