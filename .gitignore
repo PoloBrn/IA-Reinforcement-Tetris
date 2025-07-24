@@ -20,4 +20,4 @@ venv/
 .DS_Store
 
 #Ignore backup
-No_Graphical_part\Q-Learning - Backup
+No_Graphical_part/Q-Learning - Backup/
